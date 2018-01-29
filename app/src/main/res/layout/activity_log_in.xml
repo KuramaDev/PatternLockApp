@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/mine_shaft"
+    tools:context="com.stsdev.patternlockapp.ui.signIn.LogInActivity">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profileImage"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:src="@drawable/no_avatar"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/gold"/>
+
+    <TextView
+        android:id="@+id/accountName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="Welcome"
+        android:textColor="@color/gold"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:paddingEnd="50dp"
+        android:paddingStart="50dp"
+        android:textAlignment="center"
+        />
+
+</LinearLayout>

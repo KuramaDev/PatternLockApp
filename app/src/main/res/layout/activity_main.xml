@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/mine_shaft"
+    tools:context="com.stsdev.patternlockapp.MainActivity">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profileImage"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:src="@drawable/no_avatar"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/gold"/>
+
+    <TextView
+        android:id="@+id/profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="Welcome"
+        android:textColor="@color/gold"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <com.andrognito.patternlockview.PatternLockView
+        android:id="@+id/pattern_lock_view"
+
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80dp"
+        app:aspectRatio="square"
+        app:aspectRatioEnabled="true"
+        app:dotAnimationDuration="200"
+        app:dotCount="3" />
+
+</LinearLayout>
